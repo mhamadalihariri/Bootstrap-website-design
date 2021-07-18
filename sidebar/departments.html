@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>My First Bootstrap Design</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style4.css">
+
+    <!-- Font Awesome JS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Stripes & Hook</h3>
+                <strong>SH</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="company.html">
+                        <i class="fas fa-home"></i>
+                        Companies
+                    </a>
+                </li>
+                <li>
+                    <a href="departments.html">
+                        <i class="fas fa-briefcase"></i>
+                        Departments
+                    </a>
+                </li>
+                <li>
+                    <a href="employees.html">
+                        <i class="fas fa-copy"></i>
+                        Employees
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+
+                </div>
+            </nav>
+            <!-- <div class="container-fluid"> -->
+                <input class="form-control" id="myInput" type="text" placeholder="Search..">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Icon</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myTable">
+                        <tr>
+                            <td><i class="fab fa-apple"></i></td>
+                            <td>Apple</td>
+                            <td>California</td>
+                            <td>apple@example.com</td>
+                            <td>+96173242333</td>
+                            <td><i class="fas fa-edit" title="Edit" data-toggle="modal" data-target="#myModal"></i> <i
+                                    class="fas fa-ban"></i></td>
+
+                        </tr>
+                        <tr>
+                            <td><i class="fab fa-amazon"></i></td>
+                            <td>Amazon</td>
+                            <td>USA</td>
+                            <td>Amazon@example.com</td>
+                            <td>+96174353433</td>
+                            <td><i class="fas fa-edit" title="Edit" data-toggle="modal" data-target="#myModal"></i> <i
+                                    class="fas fa-ban"></i></td>
+
+                        </tr>
+                        <tr>
+                            <td><i class="fab fa-microsoft"></i></td>
+                            <td>Microsoft</td>
+                            <td>USA</td>
+                            <td>Microsoft@example.com</td>
+                            <td>+96173838322</td>
+                            <td><i class="fas fa-edit" title="Edit" data-toggle="modal" data-target="#myModal"></i> <i
+                                    class="fas fa-ban"></i></td>
+
+                        </tr>
+                        <tr>
+                            <td><i class="fab fa-bluetooth-b"></i></td>
+                            <td>Bluetooth</td>
+                            <td>Beirut</td>
+                            <td>Bluetooth@example.com</td>
+                            <td>+96174353433</td>
+                            <td><i class="fas fa-edit" title="Edit" data-toggle="modal" data-target="#myModal"></i> <i
+                                    class="fas fa-ban"></i></td>
+
+                        </tr>
+                        <tr>
+                            <td><i class="fab fa-spotify"></i></td>
+                            <td>Spotify</td>
+                            <td>USA</td>
+                            <td>Spotify@example.com</td>
+                            <td>+96174353433</td>
+                            <td><i class="fas fa-edit" title="Edit" data-toggle="modal" data-target="#myModal"></i> <i
+                                    class="fas fa-ban"></i></td>
+
+                        </tr>
+                        <tr>
+                            <td><i class="fab fa-aws"></i></td>
+                            <td>AWS</td>
+                            <td>Worldwide</td>
+                            <td>aws@example.com</td>
+                            <td>+96174353433</td>
+                            <td><i class="fas fa-edit" title="Edit" data-toggle="modal" data-target="#myModal"></i> <i
+                                    class="fas fa-ban"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-between">
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter new name" name="name">
+                        </div>
+                        <div class="form-row">
+                            <label for="address">Address:</label>
+                            <input type="text" class="form-control" id="address" placeholder="Enter new address"
+                                name="address">
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email address:</label>
+                            <input type="text" class="form-control" id="email" placeholder="Enter new email"
+                                name="email">
+                        </div>
+                        <div class="form-row">
+                            <label for="phonenumber">Phone Number :</label>
+                            <input type="text" class="form-control" id="phonenumber"
+                                placeholder="Enter new phone number" name="phoneNumber">
+                        </div>
+                        <div class="form-row">
+                            <label for="departments">Company :</label>
+
+                            <form>
+                                <select name="companies" class="custom-select">
+                                    <option selected>Custom Select Menu</option>
+                                    <option value="apple">Apple</option>
+                                    <option value="amazon">Amazon</option>
+                                    <option value="spotify">Spotify</option>
+                                </select>
+                            </form>
+                        </div>
+                </div>
+                </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="productUpdate();">Save changes</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    </div>
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+    <script>
+        function productUpdate() {
+            if ($("#name").val() != null && $("#name").val() != '') {
+                // Add product to Table
+                productAddToTable();
+
+                // Clear form fields
+                formClear();
+
+                // Focus to product name field
+                $("#name").focus();
+            }
+        }
+        function productAddToTable() {
+            // First check if a <tbody> tag exists, add one if not
+            if ($("#myTable tbody").length == 0) {
+                $("#myTable").append("<tbody></tbody>");
+            }
+
+            // Append product to the table
+            $("#myTable").append("<tr>" +
+                "<td><i class=\"fab fa-apple\"></i></td>" +
+                "<td>" + $("#name").val() + "</td>" +
+                "<td>" + $("#address").val() + "</td>" +
+                "<td>" + $("#email").val() + "</td>" +
+                "<td>" + $("#phonenumber").val() + "</td>" +
+                "<td><i class=\"fas fa-edit\" title=\"Edit\" data-toggle=\"modal\" data-target=\"#myModal\"></i> <i "+ 
+                                    "class=\"fas fa-ban\"></i></td>" +
+                "</tr>");
+        }
+        function formClear() {
+            $("#name").val("");
+            $("#address").val("");
+            $("#email").val("");
+            $("#phonenumber").val("");
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+
+
+
+</body>
+
+
+</html>
